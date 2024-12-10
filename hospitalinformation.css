@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+  }
+body {
+    /* background-image: url("4419157.jpg"); */
+    background: url('IMG1.jpg');
+    /* background: transparent; */
+
+   
+    backdrop-filter: blur(100px);
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+  /*
+   height: 100vh;  
+      display: flex;
+      justify-content: center;
+    align-items: center; */
+  }
+   
+  .slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    margin-left: 0;
+  }
+  
+  .images {
+    display: flex;
+    width: 400%;
+  }
+  
+  .images img {
+    height: 400px;
+    width: 100%;
+    transition: all 0.15s ease;
+  }
+  
+  .images input {
+    display: none;
+  }
+  
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+  
+    background: transparent;
+  
+    border: 0px solid;
+  }
+  
+  .dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #ffffff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+  }
+  
+  .dots label:hover {
+    background: #ffffff;
+  }
+  
+  #img1:checked ~ .m1 {
+    margin-left: 0;
+  }
+  #img2:checked ~ .m2 {
+    margin-left: -100%;
+  }
+  #img3:checked ~ .m3 {
+    margin-left: -200%;
+  }
+  #img4:checked ~ .m4 {
+    margin-left: -300%;
+  }
+  #img5:checked ~ .m5 {
+    margin-left: -400%;
+  }
+
+
+  
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.about-img img {
+    width: 40vw;
+
+
+    border-radius: 50px;
+    font-size: 15px;
+    padding: 20px;
+    margin: 5px;
+    
+}
+
+.heading {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+
+}
+
+.about-content h3 {
+   font-size: 1.6rem;
+ 
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+  
+}
+.btn {
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+}
